@@ -11,11 +11,11 @@ function Contact() {
         <h1 className='text-3xl font-bold'>Let's Work Together</h1>
         <div className='flex items-center gap-5'>
             <img src={Image1} alt="" className='w-10'/>
-            <h1 className='text-2xl font-bold'>new565677@gmail.com</h1>
+            <h1 className='text-2xl font-bold'>0123456789</h1>
         </div>
         <div className='flex items-center gap-5'>
             <img src={Image2} alt="" className='w-10'/>
-            <h1 className='text-2xl font-bold'>0123456789</h1>
+            <h1 className='text-2xl font-bold'>new565677@gmail.com</h1>
         </div>
       </div>
 
