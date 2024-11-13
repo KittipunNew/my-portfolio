@@ -1,9 +1,14 @@
-import React from "react";
-import Navbar from "../components/Navbar";
+import React, { useEffect, useState } from "react";
 import ImageHome from "../images/Home.png";
 import { Link } from "react-router-dom";
 
 function Home() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
       <>
         <img
@@ -11,7 +16,7 @@ function Home() {
           alt=""
           className="absolute z-[-1] -top-44 w-full"
         />
-        <div className="flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className={`flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-1000 ${isVisible ? "opacity-100" : "opacity-0 translate-y-10"}`}>
           <h1 className="text-3xl font-bold">Hello, I'm</h1>
           <h1 className="text-9xl font-bold">Kittipun</h1>
           <h1 className="text-7xl font-bold">a junior software developer</h1>

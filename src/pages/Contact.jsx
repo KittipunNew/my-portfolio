@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image1 from '../images/call.png'
 import Image2 from '../images/gmail.png'
 
 function Contact() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+      setIsVisible(true);
+  }, []);
+
   return (
-    <div className='mt-20 shadow-lg flex justify-around items-center py-20 mx-96 rounded-2xl'>
+    <div className={`mt-20 shadow-lg flex justify-around items-center py-20 mx-96 rounded-2xl transition-all duration-1000 ${isVisible ? "opacity-100" : "opacity-0 translate-x-10"}`}>
 
       <div className='flex flex-col justify-center items-center gap-y-10'>
         <h1 className='text-5xl font-bold'>Contact Me</h1>

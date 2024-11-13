@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image1 from '../images/html.png'
 import Image2 from '../images/css.png'
 import Image3 from '../images/js.png'
@@ -9,8 +9,14 @@ import Image7 from '../images/node.png'
 import Image8 from '../images/express.png'
 
 function Skill() {
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        setIsVisible(true);
+    }, []);
     return (
-        <>
+        <div className={`transition-all duration-1000 ${isVisible ? "opacity-100" : "opacity-0 translate-x-10"}`}>
             <div className='flex flex-col justify-center items-center gap-y-10 mt-36'>
                 <h1 className='text-5xl font-bold'>Front-end</h1>
                 <div className='flex text-center font-bold gap-10'>
@@ -52,7 +58,7 @@ function Skill() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
