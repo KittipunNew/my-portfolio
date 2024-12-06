@@ -20,15 +20,15 @@ function Home() {
           <h1 className="text-3xl font-bold">Hello, I'm</h1>
           <h1 className="text-9xl font-bold">Kittipun</h1>
           <h1 className="text-7xl font-bold">a junior software developer</h1>
-          <button className="bg-black text-white py-3 px-6 mt-5 rounded-full transition-all duration-300 hover:bg-white hover:text-black">
-            Download CV{" "}
-          </button>
+          <Link to="https://drive.google.com/file/d/1kFPC9pTiBkF2qiKiGiklbvlRSwZ5WPJZ/view?usp=sharingf" target="_blank" className="bg-black text-white py-3 px-6 mt-5 rounded-full transition-all duration-300 hover:bg-white hover:text-black">
+            Download CV
+          </Link>
           <div className="flex gap-5">
-            <Link to="https://github.com/">
-                <i className="fa-brands fa-linkedin text-5xl mt-5"></i>
-            </Link>
-            <Link to="https://github.com/">
+            <Link to="https://github.com/KittipunNew" target="_blank">
                 <i className="fa-brands fa-github text-5xl mt-5"></i>
+            </Link>
+            <Link to="https://www.linkedin.com/in/kittipun-teerachokdumrongkul-348887330//" target="_blank">
+                <i className="fa-brands fa-linkedin text-5xl mt-5"></i>
             </Link>
           </div>
         </div>

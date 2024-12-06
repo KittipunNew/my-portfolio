@@ -13,9 +13,11 @@ function Project() {
     return (
         <>
             <div className={`flex justify-around items-center bg-gray-100 py-5 mx-96 rounded-2xl mt-20 shadow-lg transition-all duration-1000 ${isVisible ? "opacity-100" : "opacity-0 translate-x-10"}`}>
-                <img src={Image1} alt="" className='w-20' />
-                <h1 className='text-5xl font-bold'>Project_01</h1>
-                <Link to="https://github.com/">
+                <Link to="https://orbit-rex-living.vercel.app/" target='_blank'>
+                    <img src={Image1} alt="" className='w-20' />
+                </Link>
+                <h1 className='text-5xl font-bold'>E-commerce Furniture Website</h1>
+                <Link to="https://github.com/orgs/VelociKepler/repositories" target='_blank'>
                     <i className="fa-brands fa-github text-8xl mt-5"></i>
                 </Link>
             </div>
